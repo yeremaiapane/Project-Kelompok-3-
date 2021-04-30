@@ -15,28 +15,28 @@ untuk Menjalankan Programnya lakukan Langkah berikut:
 
 Visual Studio Code untuk IDE VS Code cara cukup mudah yaitu :
 
-download terlebih dahulu code pada halaman ini
+1. download terlebih dahulu code pada halaman ini
 
-ekstrak kode tersebut
+2. ekstrak kode tersebut
 
-lalu buka IDE VS Code, lalu klik menu file, lalu klik open Folder
+3. lalu buka IDE VS Code, lalu klik menu file, lalu klik open Folder
 
-lalu silahkan pilih folder yang telah di ekstrak tadi
+4. lalu silahkan pilih folder yang telah di ekstrak tadi
 
-lalu untuk menjalankan / run programnya, silahkan menuju ke class Main.java, lalu run program tersebut
+5. lalu untuk menjalankan / run programnya, silahkan menuju ke class Main.java, lalu run program tersebut
 
 untuk IDE NetBeans
 
-download terlebih dahulu code pada halaman ini
+1. download terlebih dahulu code pada halaman ini
 
-ekstrak kode tersebut
+2. ekstrak kode tersebut
 
-buka NetBeans, lalu klik menu file, lalu klik create project, lalu isikan nama project yang di buat
+3. buka NetBeans, lalu klik menu file, lalu klik create project, lalu isikan nama project yang di buat
 
-setelah itu, kembali pada folder yang telah di ekstrak, lalu copy semua file yang ada pada folder src
+4. setelah itu, kembali pada folder yang telah di ekstrak, lalu copy semua file yang ada pada folder src
 
-lalu paste pada folder project yang baru tadi
+5. lalu paste pada folder project yang baru tadi
 
-setelah itu buka NetBeans, lalu tambahkan pada line pertama "package ****"(sesuaikan dengan package pada project baru anda)
+6. setelah itu buka NetBeans, lalu tambahkan pada line pertama "package ****"(sesuaikan dengan package pada project baru anda)
 
-lalu buka class Main.java, lalu klik run
+7. lalu buka class Main.java, lalu klik run
