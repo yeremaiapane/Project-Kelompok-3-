@@ -1,14 +1,42 @@
-## Getting Started
+Project PBO AHP Kelompok 3 Nama Kelompok 3:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Yeremia Yosefan Pane (4203550017)
+Nur Azizi (4201250001)
+Putri aisyah nulhakim (4203550005)
+Fachriza Djuanda (4203250001)
+Reza Ananda Hatmi (4203550014)
+M. Ari Maulana (4203250015)
+Ihsan Zulfahmi (4203250017)
+Edward Perdana Sinaga (4203250006)
+Steven Imanuel Naibaho (4203250020)
+Alfattah Atalarais (4203250030)
+Saatira Hilmi Batubara (4203250002)
+untuk Menjalankan Programnya lakukan Langkah berikut:
 
-## Folder Structure
+Visual Studio Code untuk IDE VS Code cara cukup mudah yaitu :
 
-The workspace contains two folders by default, where:
+download terlebih dahulu code pada halaman ini
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+ekstrak kode tersebut
 
-## Dependency Management
+lalu buka IDE VS Code, lalu klik menu file, lalu klik open Folder
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+lalu silahkan pilih folder yang telah di ekstrak tadi
+
+lalu untuk menjalankan / run programnya, silahkan menuju ke class Main.java, lalu run program tersebut
+
+untuk IDE NetBeans
+
+download terlebih dahulu code pada halaman ini
+
+ekstrak kode tersebut
+
+buka NetBeans, lalu klik menu file, lalu klik create project, lalu isikan nama project yang di buat
+
+setelah itu, kembali pada folder yang telah di ekstrak, lalu copy semua file yang ada pada folder src
+
+lalu paste pada folder project yang baru tadi
+
+setelah itu buka NetBeans, lalu tambahkan pada line pertama "package ****"(sesuaikan dengan package pada project baru anda)
+
+lalu buka class Main.java, lalu klik run
