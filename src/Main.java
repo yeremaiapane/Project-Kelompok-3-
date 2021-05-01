@@ -157,8 +157,8 @@ public class Main {
         double[] totalA = Aceng.totalAlternatif(AlternatifK1, AlternatifK2, AlternatifK3, AlternatifK4);
         Aceng.display(totalA);
         
-        // double[] totalM = Mahmud.totalAlternatifM(AlternatifK1, AlternatifK2, AlternatifK3, AlternatifK4);
-        // Mahmud.display(totalM);
+        double[] totalM = Mahmud.totalAlternatif(AlternatifK1, AlternatifK2, AlternatifK3, AlternatifK4);
+        Mahmud.display(totalM);
         
     }
 
