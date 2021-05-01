@@ -103,9 +103,9 @@ public class Main {
         System.out.println("Mahmud\t  3.00-3.50\t> 3.000.000\t\t\t<=2\t\t\t5");
         System.out.println("Jamal\t  3.00-3.50\t< 1.500.000\t\t\t<=3\t\t\t4");
 
-        Alternatif Aceng = new Alternatif(1, 1, 3, 4);
-        Alternatif Mahmud = new Alternatif(3, 3, 4, 3);
-        Alternatif Jamal = new Alternatif(3, 1, 4, 2);
+        Alternatif Aceng = new Alternatif("Aceng",1, 1, 3, 4);
+        Alternatif Mahmud = new Alternatif("Mahmud",3, 3, 4, 3);
+        Alternatif Jamal = new Alternatif("Jamal",3, 1, 4, 2);
         System.out.println("\n");
         Aceng.display();
         Mahmud.display();
@@ -152,13 +152,22 @@ public class Main {
         double[] AlternatifK4J = Jamal.AlternatifK4(prioritas ,hitungSubKriteria);
         Jamal.display(AlternatifK4J);
         
-        System.out.println("\nAceng");
-        
-        double[] totalA = Aceng.totalAlternatif(AlternatifK1, AlternatifK2, AlternatifK3, AlternatifK4);
-        Aceng.display(totalA);
-        
-        double[] totalM = Mahmud.totalAlternatif(AlternatifK1, AlternatifK2, AlternatifK3, AlternatifK4);
-        Mahmud.display(totalM);
+        System.out.println("\nHasil Akhir");
+        System.out.print("Aceng  : ");
+        double totalA = Aceng.totalAlternatif(AlternatifK1, AlternatifK2, AlternatifK3, AlternatifK4);
+        System.out.format("%.3f ",totalA);
+        System.out.print("\nMahmud : ");
+        double totalM = Mahmud.totalAlternatif(AlternatifK1M, AlternatifK2M, AlternatifK3M, AlternatifK4M);
+        System.out.format("%.3f ",totalM);
+        System.out.print("\nJamal  : ");
+        double totalJ = Jamal.totalAlternatif(AlternatifK1J, AlternatifK2J, AlternatifK3J, AlternatifK4J);
+        System.out.format("%.3f ",totalJ);
+
+        System.out.println("\n\nHasil Pengurutan");
+        Double[] sorted = Aceng.sort(totalA, totalJ, totalM);
+        System.out.format("Aceng   : %.3f",sorted[0]);
+        System.out.format("\nJamal   : %.3f",sorted[1]);
+        System.out.format("\nMahmud  : %.3f",sorted[2]);
         
     }
 

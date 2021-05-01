@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Collections;
 public class Alternatif {
     String nim;
     String nama;
@@ -8,11 +10,20 @@ public class Alternatif {
     int JumlahPenghasilanOrtu; 
     int JumlahTanggunganOrtu; 
     int semester; 
-    public Alternatif(int IPK, int JumlahPenghasilanOrtu, int JumlahTanggunganOrtu, int semester){
+    public Alternatif(String nama,int IPK, int JumlahPenghasilanOrtu, int JumlahTanggunganOrtu, int semester){
+        this.nama = nama;
         this.IPK = IPK;
         this.JumlahTanggunganOrtu = JumlahTanggunganOrtu;
         this.JumlahPenghasilanOrtu = JumlahPenghasilanOrtu;
         this.semester = semester;
+    }
+
+    public void setName(String nama) {
+        nama = this.nama;
+    }
+
+    void getName() {
+        System.out.println("Nama : " + this.nama);
     }
 
     public void setIPK(int iPK) {
@@ -47,6 +58,7 @@ public class Alternatif {
 
     void display() {
         System.out.println("Urutan Sesuai dengan Tabel \n");
+        getName();
         getIPK();
         getJumlahPenghasilanOrtu();
         getJumlahTanggunganOrtu();
@@ -93,26 +105,20 @@ public class Alternatif {
          return K4;
     }   
 
-    public double[] totalAlternatif(double[] K1, double[] K2, double[] K3, double[] K4){
-        double[] total = new double[K1.length];
+    public double totalAlternatif(double[] K1, double[] K2, double[] K3, double[] K4){
+        double total = 0;
         for (int i = 0; i < 1; i++) {
-            total[i] = K1[i] + K2[i] + K3[i] + K4[i];
+            total = K1[i] + K2[i] + K3[i] + K4[i];
         }
         return total;
     }
-    
-    
-
-    // public double[] hitungAkhir(double[] jumlahkolom ,double [] AlternatifK1, double[] AlternatifK2, double[] AlternatifK3, double[] AlternatifK4){
-    //     double[] hitungAkhir = new double[jumlahkolom.length];
-    //     int k=0;
-    //     for (int i = 0; i < hitungAkhir.length; i++) {
-    //         double matriks = 0;
-    //         for (int j = i; j < hitungAkhir.length; j++) {
-    //             matriks += hitungAkhir[i][j];
-    //         }
-    //         hitungAkhir[k]=matriks
-    //     }
     // }
-
+    public Double[] sort (double totalA, double totalM, double totalJ){
+        Double[] UL = new Double[3];
+        UL [0] =  totalA;
+        UL [1] =  totalM;
+        UL [2] =  totalJ;
+        Arrays.sort(UL, Collections.reverseOrder());
+        return UL;
+    }
 }
